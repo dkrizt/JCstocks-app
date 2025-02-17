@@ -8,8 +8,6 @@ import { useAppDispatch, useAppSelector } from '@/app/redux';
 import { setIsSidebarCollapsed, setIsDarkMode } from '@/state';
 
 const Navbar = () => {
-  //   const isDarkMode = true;
-
   const dispatch = useAppDispatch();
   const isSidebarCollapsed = useAppSelector(
     (state) => state.global.isSidebarCollapsed
