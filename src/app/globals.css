@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 
-html, body,
+html,
+body,
 #root,
 .app {
   height: 100%;
@@ -16,4 +17,16 @@ html, body,
   @apply text-sm;
   @apply bg-gray-500;
   @apply text-gray-900;
+}
+
+@media (min-width: 768px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 20vh);
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 7.5vh);
+  }
 }
