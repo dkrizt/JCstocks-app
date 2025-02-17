@@ -10,7 +10,7 @@ import { setIsSidebarCollapsed, setIsDarkMode } from '@/state';
 const Navbar = () => {
   const dispatch = useAppDispatch();
   const isSidebarCollapsed = useAppSelector(
-    (state) => state.global.isSidebarCollapsed
+    (state) => state.global.isSidebarCollapsed,
   );
 
   const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
@@ -74,7 +74,7 @@ const Navbar = () => {
               height={50}
               className="rounded-full h-full object-cover"
             />
-            <span className="font-semibold">Don Chris</span>
+            <span className="font-semibold">Dev Chris</span>
           </div>
         </div>
         <Link href="/settings">
