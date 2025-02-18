@@ -84,7 +84,7 @@ const Products = () => {
                   /*                   src={`https://s3-inventorymanagement.s3.us-east-2.amazonaws.com/product${
                     Math.floor(Math.random() * 3) + 1
                   }.png`} */
-                  src=""
+                  src={`https://cdn.dummyjson.com/products/images/vehicle/Pacifica%20Touring/thumbnail.png`}
                   alt={product.name}
                   width={150}
                   height={150}
